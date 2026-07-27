@@ -630,3 +630,279 @@ footer {
     flex-direction: column;
   }
 }
+
+
+/* ===== V2 SECTION COLOR & VISUAL RHYTHM ===== */
+:root {
+  --navy: #24364b;
+  --navy-soft: #e8edf2;
+  --sage: #aab6a4;
+  --sage-soft: #edf1eb;
+  --bronze-soft: #efe6d8;
+  --sand: #f4eee4;
+  --slate: #44515f;
+}
+
+.section {
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(var(--max), calc(100% - 48px));
+  height: 3px;
+  transform: translateX(-50%);
+  background: transparent;
+}
+
+.section-profile {
+  background: linear-gradient(180deg, #f8fafb 0%, var(--navy-soft) 100%);
+}
+
+.section-profile::before {
+  background: var(--navy);
+}
+
+.section-leadership {
+  background: var(--paper);
+}
+
+.section-leadership::before {
+  background: var(--bronze);
+}
+
+.section-career {
+  background: linear-gradient(180deg, var(--sage-soft) 0%, #f5f6f2 100%);
+}
+
+.section-career::before {
+  background: var(--sage);
+}
+
+.financial {
+  background: linear-gradient(180deg, var(--bronze-soft) 0%, var(--sand) 100%);
+}
+
+.financial::before {
+  background: var(--bronze);
+}
+
+.section-perspective {
+  background: linear-gradient(180deg, #eef2f5 0%, #f8fafb 100%);
+}
+
+.section-perspective::before {
+  background: var(--navy);
+}
+
+.section-insights {
+  background: linear-gradient(180deg, #f7f4ee 0%, #fbfaf7 100%);
+}
+
+.section-insights::before {
+  background: linear-gradient(90deg, var(--bronze), var(--navy), var(--sage));
+}
+
+.contact {
+  background: var(--navy);
+  color: var(--paper);
+}
+
+.contact::before {
+  background: var(--bronze);
+}
+
+.contact .label {
+  color: #d6b77f;
+}
+
+.contact p {
+  color: rgba(251,250,247,.78);
+}
+
+.contact .button-dark {
+  background: var(--paper);
+  color: var(--navy);
+  border-color: var(--paper);
+}
+
+.contact .button-light {
+  color: var(--paper);
+  border-color: rgba(251,250,247,.65);
+}
+
+.contact .button-light:hover {
+  background: rgba(251,250,247,.12);
+}
+
+/* Section heading accent */
+.section-intro h2 {
+  position: relative;
+}
+
+.section-intro h2::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-top: 24px;
+  background: var(--bronze);
+}
+
+/* Leadership rows receive subtle category color */
+.line-list article {
+  padding-left: 18px;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.line-list article:nth-child(1) { border-left: 4px solid var(--navy); }
+.line-list article:nth-child(2) { border-left: 4px solid var(--bronze); }
+.line-list article:nth-child(3) { border-left: 4px solid var(--sage); }
+.line-list article:nth-child(4) { border-left: 4px solid var(--slate); }
+
+.line-list article:hover {
+  background: rgba(255,255,255,.45);
+}
+
+/* Career rows */
+.career-list article {
+  padding-left: 18px;
+  border-left: 4px solid transparent;
+}
+
+.career-list article:nth-child(1) { border-left-color: var(--navy); }
+.career-list article:nth-child(2) { border-left-color: var(--bronze); }
+.career-list article:nth-child(3) { border-left-color: var(--sage); }
+
+/* Five month roadmap */
+.roadmap {
+  gap: 14px;
+  border: 0;
+}
+
+.roadmap article {
+  border: 1px solid rgba(36,54,75,.14);
+  border-radius: 14px;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 12px 30px rgba(36,54,75,.05);
+}
+
+.roadmap article:nth-child(1) { border-top: 5px solid var(--navy); }
+.roadmap article:nth-child(2) { border-top: 5px solid var(--slate); }
+.roadmap article:nth-child(3) { border-top: 5px solid var(--bronze); }
+.roadmap article:nth-child(4) { border-top: 5px solid var(--sage); }
+.roadmap article:nth-child(5) { border-top: 5px solid #6f7b64; }
+
+/* ===== REARRANGED THOUGHT LEADERSHIP ===== */
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 50px;
+}
+
+.insight-card {
+  position: relative;
+  min-height: 420px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(17,17,17,.10);
+  border-radius: 16px;
+  background: rgba(255,255,255,.76);
+  box-shadow: 0 18px 46px rgba(38,45,52,.07);
+  overflow: hidden;
+}
+
+.insight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 7px;
+}
+
+.compliance-card::before { background: var(--bronze); }
+.cyber-card::before { background: var(--navy); }
+.leadership-card::before { background: var(--sage); }
+.clarity-card::before { background: var(--slate); }
+
+.insight-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.insight-card .insight-type {
+  margin: 0;
+}
+
+.insight-number {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: .16em;
+}
+
+.insight-card h3 {
+  max-width: 620px;
+  margin-bottom: 18px;
+  font-size: clamp(28px, 3vw, 42px);
+}
+
+.insight-summary {
+  max-width: 640px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.insight-card blockquote {
+  margin-top: auto;
+  padding-top: 28px;
+  font-size: 22px;
+  border-left: 0;
+  border-top: 1px solid var(--line);
+}
+
+.compliance-card blockquote { color: #684c27; }
+.cyber-card blockquote { color: var(--navy); }
+.leadership-card blockquote { color: #53604f; }
+.clarity-card blockquote { color: var(--slate); }
+
+/* Impact strip gets a subtle alternating color */
+.impact-grid > div:nth-child(1) { background: #ece8df; }
+.impact-grid > div:nth-child(2) { background: #e9eef2; }
+.impact-grid > div:nth-child(3) { background: #edf1eb; }
+.impact-grid > div:nth-child(4) { background: #f1e9dc; }
+
+@media (max-width: 900px) {
+  .insight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insight-card {
+    min-height: auto;
+  }
+
+  .section::before {
+    width: min(var(--max), calc(100% - 32px));
+  }
+}
+
+@media (max-width: 620px) {
+  .section::before {
+    width: min(var(--max), calc(100% - 22px));
+  }
+
+  .insight-card {
+    padding: 24px 22px;
+  }
+
+  .roadmap {
+    gap: 12px;
+  }
+}

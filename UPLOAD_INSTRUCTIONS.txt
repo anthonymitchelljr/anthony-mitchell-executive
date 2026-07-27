@@ -1,13 +1,18 @@
+WEBSITE UPDATE
+
 Replace these files in the root of your GitHub repository:
-- styles.css
 - index.html
+- styles.css
 - script.js
 
-Keep these files present:
-- anthony-mitchell-executive-headshot.png
-- Anthony_L_Mitchell_CIO_Executive_Resume_2026.docx
+This update:
+- rearranges Thought Leadership into a balanced 2x2 grid
+- adds restrained navy, bronze, sage, and slate accents
+- differentiates major sections with subtle background shifts
+- adds section color bars and stronger visual rhythm
+- keeps the Apple/Yeezy clean aesthetic
 
 Commit message:
-Fix executive site layout and hero proportions
+Refine section colors and thought leadership layout
 
-After GitHub Pages redeploys, refresh with Ctrl + F5.
+After deployment, refresh with Ctrl + F5.
