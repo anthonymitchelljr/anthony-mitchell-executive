@@ -1,10 +1,19 @@
-Upload these files to the root of your GitHub repository:
+UPLOAD INSTRUCTIONS
 
-1. index.html — replaces the current homepage
-2. anthony-mitchell-executive-headshot.png — new executive headshot
-3. Anthony_L_Mitchell_CIO_Executive_Resume_2026.docx — upload only if it is not already present
+Upload these files to the ROOT of your GitHub repository:
 
-Commit message:
-Add executive headshot to website
+1. index.html
+2. styles.css
+3. script.js
+4. anthony-mitchell-executive-headshot.png
+5. Anthony_L_Mitchell_CIO_Executive_Resume_2026.docx (only if it is not already present)
 
-GitHub Pages will redeploy automatically after the commit.
+Important:
+- Replace the existing index.html, styles.css, and script.js.
+- Keep the file names exactly as shown.
+- Commit directly to the main branch.
+
+Suggested commit message:
+Redesign executive site with Apple Yeezy aesthetic
+
+After committing, wait 1–3 minutes and refresh the live site with Ctrl + F5.
