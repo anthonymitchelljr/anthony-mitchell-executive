@@ -1,0 +1,10 @@
+Upload these files to the root of your GitHub repository:
+
+1. index.html — replaces the current homepage
+2. anthony-mitchell-executive-headshot.png — new executive headshot
+3. Anthony_L_Mitchell_CIO_Executive_Resume_2026.docx — upload only if it is not already present
+
+Commit message:
+Add executive headshot to website
+
+GitHub Pages will redeploy automatically after the commit.

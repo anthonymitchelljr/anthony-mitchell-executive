@@ -53,6 +53,34 @@
     @media (max-width: 760px) {
       .thought-grid { grid-template-columns: 1fr; }
     }
+  
+    .executive-photo-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--white);
+      border-radius: 18px;
+      box-shadow: 0 24px 60px rgba(13,34,56,.10);
+    }
+    .executive-photo-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .photo-caption {
+      padding: 22px 24px 24px;
+    }
+    .photo-caption h2 {
+      margin-bottom: 6px;
+      font-size: 25px;
+    }
+    .photo-caption p:last-child {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
   </style>
 
 </head>
@@ -90,16 +118,15 @@
             <a class="button secondary" href="#experience">View Career Highlights</a>
           </div>
         </div>
-        <aside class="executive-card" aria-label="Executive profile summary">
-          <div class="monogram">AM</div>
-          <p class="card-label">Executive Focus</p>
-          <h2>Strategy. Security. Transformation.</h2>
-          <ul>
-            <li>Enterprise IT leadership</li>
-            <li>Cybersecurity and governance</li>
-            <li>Azure and AWS modernization</li>
-            <li>Operational excellence</li>
-          </ul>
+        <aside class="executive-photo-card" aria-label="Executive portrait of Anthony L. Mitchell Jr.">
+          <img src="anthony-mitchell-executive-headshot.png"
+               alt="Anthony L. Mitchell Jr., technology executive"
+               loading="eager" />
+          <div class="photo-caption">
+            <p class="card-label">Anthony L. Mitchell Jr.</p>
+            <h2>Technology Executive</h2>
+            <p>CIO · Cybersecurity · Transformation</p>
+          </div>
         </aside>
       </div>
     </section>
