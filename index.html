@@ -81,6 +81,42 @@
       font-size: 14px;
     }
 
+  
+    .cio-roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 38px;
+    }
+    .cio-roadmap-grid article {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--white);
+    }
+    .cio-roadmap-grid span {
+      color: var(--gold);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: .12em;
+      font-weight: 700;
+    }
+    .cio-roadmap-grid h3 {
+      margin: 16px 0 10px;
+      font-size: 21px;
+    }
+    .cio-roadmap-grid p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 1180px) {
+      .cio-roadmap-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 760px) {
+      .cio-roadmap-grid { grid-template-columns: 1fr; }
+    }
+
   </style>
 
 </head>
@@ -248,29 +284,71 @@
       </div>
     </section>
 
+    
     <section id="insights" class="section">
       <div class="container">
         <p class="section-label">Executive Perspective</p>
-        <h2>How I approach a new leadership mandate</h2>
-        <div class="days-grid">
+        <h2>My first five months as a CIO</h2>
+        <p class="section-intro">
+          A CIO mandate requires more than a traditional 90-day plan. My approach balances
+          listening, enterprise risk reduction, operational stabilization, strategic alignment,
+          and measurable execution across the first five months.
+        </p>
+
+        <div class="cio-roadmap-grid">
           <article>
-            <span>Days 1–30</span>
-            <h3>Listen and assess</h3>
-            <p>Meet stakeholders, understand business priorities, review risk, and evaluate the technology landscape.</p>
+            <span>Month 1</span>
+            <h3>Listen, assess, and establish trust</h3>
+            <p>
+              Meet with the CEO, executive team, board stakeholders, business leaders, and IT staff.
+              Assess enterprise risk, service performance, cybersecurity posture, talent, vendor
+              dependencies, architecture, and major business priorities.
+            </p>
           </article>
+
           <article>
-            <span>Days 31–60</span>
-            <h3>Prioritize and align</h3>
-            <p>Publish an executive roadmap, identify quick wins, mature governance, and align investments.</p>
+            <span>Month 2</span>
+            <h3>Stabilize operations and reduce immediate risk</h3>
+            <p>
+              Address critical reliability, security, compliance, continuity, and service-delivery
+              gaps. Clarify ownership, strengthen incident readiness, validate recovery capabilities,
+              and improve visibility into technology performance.
+            </p>
           </article>
+
           <article>
-            <span>Days 61–90</span>
-            <h3>Execute and measure</h3>
-            <p>Launch prioritized initiatives, establish executive metrics, and build momentum for long-term transformation.</p>
+            <span>Month 3</span>
+            <h3>Align technology with enterprise strategy</h3>
+            <p>
+              Translate business priorities into an executive technology agenda. Establish governance,
+              define investment principles, identify quick wins, and align the technology portfolio
+              with growth, customer experience, workforce productivity, and risk tolerance.
+            </p>
+          </article>
+
+          <article>
+            <span>Month 4</span>
+            <h3>Publish the roadmap and mobilize execution</h3>
+            <p>
+              Present a sequenced multi-year roadmap with clear outcomes, dependencies, investment
+              requirements, and accountability. Launch priority modernization, cybersecurity,
+              data, cloud, and operating-model initiatives.
+            </p>
+          </article>
+
+          <article>
+            <span>Month 5</span>
+            <h3>Measure progress and build transformation momentum</h3>
+            <p>
+              Establish executive dashboards, confirm value realization, strengthen team capability,
+              refine sourcing and vendor strategy, and create a repeatable operating cadence that
+              sustains accountability and long-term transformation.
+            </p>
           </article>
         </div>
       </div>
     </section>
+
 
 
     <section id="thought-leadership" class="section section-alt">
