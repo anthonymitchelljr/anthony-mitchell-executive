@@ -1,0 +1,10 @@
+Replace only styles.css in the root of your GitHub repository.
+
+This update:
+- shrinks the hero photo column
+- gives the text more breathing room
+- slightly reduces hero image height
+- keeps the rest of the site design intact
+
+Suggested commit message:
+Refine hero photo sizing
